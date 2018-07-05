@@ -5,6 +5,9 @@
     /// </summary>
     public class User
     {
+        /// <summary>
+        /// Gets or sets a user Id.
+        /// </summary>
         public System.Guid Id { get; set; }
         /// <summary>
         /// Gets or sets a user first name.
