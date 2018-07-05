@@ -29,8 +29,64 @@ namespace UserStorageServices.Tests
             // Act
             userStorageService.Add(new User
             {
-                FirstName = null
+                FirstName = null,
+                LastName = "ln",
+                Age = 1
             });
+
+            // Assert - [ExpectedException]
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Add_UserLastNameIsNull_ExceptionThrown()
+        {
+            // Arrange
+            var userStorageService = new UserStorageService();
+
+            // Act
+            userStorageService.Add(new User
+                                       {
+                                           FirstName = "fn",
+                                           LastName = null,
+                                           Age = 1
+                                       });
+
+            // Assert - [ExpectedException]
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Add_UserAgeIsLessThanZero_ExceptionThrown()
+        {
+            // Arrange
+            var userStorageService = new UserStorageService();
+
+            // Act
+            userStorageService.Add(new User
+                                       {
+                                           FirstName = "fn",
+                                           LastName = "ln",
+                                           Age = -2
+                                       });
+
+            // Assert - [ExpectedException]
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Add_UserAgeIsGreaterThan140_ExceptionThrown()
+        {
+            // Arrange
+            var userStorageService = new UserStorageService();
+
+            // Act
+            userStorageService.Add(new User
+                                       {
+                                           FirstName = "fn",
+                                           LastName = "ln",
+                                           Age = 142
+                                       });
 
             // Assert - [ExpectedException]
         }

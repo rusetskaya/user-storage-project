@@ -35,6 +35,16 @@ namespace UserStorageServices
                 throw new ArgumentException("FirstName is null or empty or whitespace", nameof(user));
             }
 
+            if (string.IsNullOrWhiteSpace(user.LastName))
+            {
+                throw new ArgumentException("LastName is null or empty or whitespace", nameof(user));
+            }
+
+            if (user.Age <= 0 || user.Age > 140)
+            {
+                throw new ArgumentException("Age is incorrect", nameof(user));
+            }
+
             user.Id = Guid.NewGuid();
             this._storage.Add(user);
 
