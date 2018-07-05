@@ -1,0 +1,5 @@
+C:\extra\user-storage-project\UserStorage\UserStorageServices\bin\Debug\UserStorageServices.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices\bin\Debug\UserStorageServices.pdb
+C:\extra\user-storage-project\UserStorage\UserStorageServices\obj\Debug\UserStorageServices.csprojResolveAssemblyReference.cache
+C:\extra\user-storage-project\UserStorage\UserStorageServices\obj\Debug\UserStorageServices.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices\obj\Debug\UserStorageServices.pdb

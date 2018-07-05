@@ -1,0 +1,6 @@
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\bin\Debug\UserStorageMonitor.exe.config
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\bin\Debug\UserStorageMonitor.exe
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\bin\Debug\UserStorageMonitor.pdb
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\obj\Debug\UserStorageMonitor.csprojResolveAssemblyReference.cache
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\obj\Debug\UserStorageMonitor.exe
+C:\extra\user-storage-project\UserStorage\UserStorageMonitor\obj\Debug\UserStorageMonitor.pdb

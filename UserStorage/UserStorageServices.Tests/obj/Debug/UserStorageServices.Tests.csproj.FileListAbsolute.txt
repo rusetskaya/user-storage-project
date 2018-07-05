@@ -1,0 +1,8 @@
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\bin\Debug\UserStorageServices.Tests.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\bin\Debug\UserStorageServices.Tests.pdb
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\bin\Debug\UserStorageServices.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\bin\Debug\UserStorageServices.pdb
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\obj\Debug\UserStorageServices.Tests.csprojResolveAssemblyReference.cache
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\obj\Debug\UserStorageServices.Tests.dll
+C:\extra\user-storage-project\UserStorage\UserStorageServices.Tests\obj\Debug\UserStorageServices.Tests.pdb
