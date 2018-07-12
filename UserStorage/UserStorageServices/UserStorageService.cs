@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace UserStorageServices
 {
-    using System.Linq;
-
     /// <summary>
     /// Represents a service that stores a set of <see cref="User"/>s and allows to search through them.
     /// </summary>
@@ -21,7 +20,7 @@ namespace UserStorageServices
         /// <returns>An amount of users in the storage.</returns>
         public int Count => this._storage.Count;
 
-        private bool IsLoggingEnabled;
+        private bool IsLoggingEnabled { get; set; }
 
         /// <summary>
         /// Adds a new <see cref="User"/> to the storage.
