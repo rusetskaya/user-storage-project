@@ -1,5 +1,0 @@
-C:\extra\user-storage-project\UserStorage\ServiceConfigurationSection\bin\Debug\ServiceConfigurationSection.dll
-C:\extra\user-storage-project\UserStorage\ServiceConfigurationSection\bin\Debug\ServiceConfigurationSection.pdb
-C:\extra\user-storage-project\UserStorage\ServiceConfigurationSection\obj\Debug\ServiceConfigurationSection.csprojResolveAssemblyReference.cache
-C:\extra\user-storage-project\UserStorage\ServiceConfigurationSection\obj\Debug\ServiceConfigurationSection.dll
-C:\extra\user-storage-project\UserStorage\ServiceConfigurationSection\obj\Debug\ServiceConfigurationSection.pdb

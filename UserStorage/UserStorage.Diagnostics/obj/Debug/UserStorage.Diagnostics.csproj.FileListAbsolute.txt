@@ -1,5 +1,0 @@
-C:\extra\user-storage-project\UserStorage\UserStorage.Diagnostics\bin\Debug\UserStorage.Diagnostics.dll
-C:\extra\user-storage-project\UserStorage\UserStorage.Diagnostics\bin\Debug\UserStorage.Diagnostics.pdb
-C:\extra\user-storage-project\UserStorage\UserStorage.Diagnostics\obj\Debug\UserStorage.Diagnostics.csprojResolveAssemblyReference.cache
-C:\extra\user-storage-project\UserStorage\UserStorage.Diagnostics\obj\Debug\UserStorage.Diagnostics.dll
-C:\extra\user-storage-project\UserStorage\UserStorage.Diagnostics\obj\Debug\UserStorage.Diagnostics.pdb
