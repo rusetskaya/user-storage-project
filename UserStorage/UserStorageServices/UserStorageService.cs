@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace UserStorageServices
 {
+    using System.Linq;
+
     /// <summary>
     /// Represents a service that stores a set of <see cref="User"/>s and allows to search through them.
     /// </summary>
@@ -19,12 +21,19 @@ namespace UserStorageServices
         /// <returns>An amount of users in the storage.</returns>
         public int Count => this._storage.Count;
 
+        private bool IsLoggingEnabled;
+
         /// <summary>
         /// Adds a new <see cref="User"/> to the storage.
         /// </summary>
         /// <param name="user">A new <see cref="User"/> that will be added to the storage.</param>
         public void Add(User user)
         {
+            if (IsLoggingEnabled)
+            {
+                Console.WriteLine("Add() method is called.");
+            }
+
             if (user == null)
             {
                 throw new ArgumentNullException(nameof(user));
@@ -47,24 +56,57 @@ namespace UserStorageServices
 
             user.Id = Guid.NewGuid();
             this._storage.Add(user);
-
-            // TODO: Implement Add() method and all other validation rules.
         }
 
         /// <summary>
         /// Removes an existed <see cref="User"/> from the storage.
         /// </summary>
-        public void Remove()
+        public void Remove(User user)
         {
-            // TODO: Implement Remove() method.
+            if (IsLoggingEnabled)
+            {
+                Console.WriteLine("Remove() method is called.");
+            }
+
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+                
+            var storageContainsUser = _storage.Contains(user);
+            
+            if (!storageContainsUser)
+            { 
+                throw new InvalidOperationException("There is no such user in the storage");
+            }
+            
+            _storage.Remove(user);
         }
 
         /// <summary>
         /// Searches through the storage for a <see cref="User"/> that matches specified criteria.
         /// </summary>
-        public void Search()
+        public User Search(Guid id)
         {
-            // TODO: Implement Search() method.
+            if (IsLoggingEnabled)
+            {
+                Console.WriteLine("Search() method is called.");
+            }
+            
+            return _storage.First(new Func<User, bool>(a => a.Id == id));
+        }
+
+        /// <summary>
+        /// Searches through the storage for a <see cref="User"/> that matches specified criteria.
+        /// </summary>
+        public User Search(string lastName)
+        {
+            if (IsLoggingEnabled)
+            {
+                Console.WriteLine("Search() method is called.");
+            }
+
+            return _storage.First(new Func<User, bool>(a => a.LastName == lastName));
         }
     }
 }

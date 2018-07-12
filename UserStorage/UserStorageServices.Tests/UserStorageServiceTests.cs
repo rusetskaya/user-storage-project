@@ -92,6 +92,20 @@ namespace UserStorageServices.Tests
         }
 
         [TestMethod]
+        public void Remove_DataIsCorrect_UserRemoved()
+        {
+            // Arrange
+            var userStorageService = new UserStorageService();
+            var user = new User { FirstName = "first", LastName = "last", Age = 20 };
+            userStorageService.Add(user);
+
+            // Act
+            userStorageService.Remove(user);
+
+            // Assert
+        }
+
+        [TestMethod]
         public void Remove_WithoutArguments_NothingHappen()
         {
         }
